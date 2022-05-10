@@ -10,7 +10,7 @@ env:
   # Change these values if you have forked it for your own works
   GitHubMail: "rehanalt506@gmail.com"
   GitHubName: "rehanalt506" 
-  Branch: "main"
+  Branch: "master"
 
 jobs:
   build:
