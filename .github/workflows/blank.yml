@@ -1,4 +1,4 @@
-name: Demploy
+name: Deploy
 
 on:
   push:
@@ -31,7 +31,7 @@ jobs:
 
       - name: Clone The Secret Mirror Repository
         run: |
-          git clone https://${{ secrets.GH_TOKEN }}@github.com/${{ secrets.REMPO }} -b ${Branch} source
+          git clone https://${{ secrets.GH_TOKEN }}@github.com/${{ secrets.REPO }} -b ${Branch} source
       - name: Compile The Mirroring Docker Container
         run: |
           cd source || exit 1
